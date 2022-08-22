@@ -46,7 +46,7 @@ header img{
     display: block;
     text-align: center;
     margin: 3em auto;
-    width: 10%;
+    width: 5em;
     height: 2em;
     border: none;
     border-radius: 10px;
@@ -58,4 +58,15 @@ header img{
 .enviar:hover{
     background: blue;
     transform: scale(1.05)
+}
+
+#resposta1{
+    display: none;
+    text-align: center;
+}
+
+
+#formResposta{
+    text-align: center;
+    margin: 3em auto;
 }
