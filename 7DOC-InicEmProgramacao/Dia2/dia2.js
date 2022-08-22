@@ -34,15 +34,14 @@ function checkForm(){
 
       if (respostaGosta == 'sim'){
         document.getElementById("resposta2").innerHTML = "Muito bom! Continue estudando e você terá muito sucesso.";
-        console.log("Muito bom! Continue estudando e você terá muito sucesso.");
       }
+
       else if (respostaGosta == 'nao'){
         document.getElementById("resposta2").innerHTML = "Ahh que pena... Já tentou aprender outras linguagens?";
-        console.log("Ahh que pena... Já tentou aprender outras linguagens?");
       }
+
       else{
         document.getElementById("resposta2").innerHTML = "";
-        console.log("Null")
       }
 
     
