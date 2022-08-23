@@ -42,12 +42,12 @@ body{
 
     position: absolute;
     left: -100vw;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .menu-lateral--ativo{
     left: 0;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .menu-lateral__logo{
@@ -104,10 +104,17 @@ body{
 
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina{
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-feed{
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -118,10 +125,15 @@ body{
     overflow: hidden;
 }
 
+.cartao--destaque{
+    margin-bottom: 16px;
+}
+
 .cartao__conteudo {
     display:grid;
     padding: 16px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 
 .cartao__destaque{
@@ -166,6 +178,7 @@ body{
     background-color: #0480DC;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play:before{
@@ -181,4 +194,9 @@ body{
 .cartao__botao--destaque::before{
     content: "\e90b";
     margin-right: 10px;
+}
+
+.secao{
+    display: grid;
+    gap: 16px;
 }
