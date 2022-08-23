@@ -2,7 +2,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: lightblue;
+    background-color: black;
+    color:white
 }
 
 header{
@@ -20,29 +21,18 @@ header img{
     margin: 1em auto;
 }
 
-
-
-
 .formulario{
-    width: 50%;
-    margin: 0 auto;
     text-align: center;
-}
-
-.formulario label{
-    text-align: center;
-    display: block;
-    margin: 0 0 0.5em 0;
 }
 
 .input-padrao{
-    margin: 0 auto 2em;
+    margin: 2em auto 2em;
     display: block;
     padding:0.5em;
 }
 
 .enviar{
-    color: white;
+    color: black;
     display: block;
     text-align: center;
     margin: 3em auto;
@@ -50,23 +40,25 @@ header img{
     height: 2em;
     border: none;
     border-radius: 10px;
-    background: darkblue;
+    background: yellow;
     transition: 500ms;
     font-size: 16px;
 }
 
 .enviar:hover{
-    background: blue;
+    background: cyan;
     transform: scale(1.05)
 }
 
-#resposta1{
-    display: none;
+.painelMensagens{
+    width: 50%;
+    margin: 3em auto;
+    padding: 3em;
+    border-top: 2px yellow solid;
     text-align: center;
 }
 
-
-#formResposta{
-    text-align: center;
-    margin: 3em auto;
+#botaoRefresh{
+    margin: 0 auto;
+    display: none;
 }
