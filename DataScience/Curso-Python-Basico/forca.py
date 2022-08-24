@@ -9,14 +9,12 @@ def jogar():
     letras_acertadas = ["_","_","_","_","_","_"]
     print("Palavra:",letras_acertadas)
 
-    enforcou = False
-    acertou = False
     erros = 0
     chances = 6
     acertou_letra = False
 
 
-    while(not enforcou and not acertou):
+    while(True):
         chute = input("Qual letra?\n")
         chute = chute.strip().upper()
 
@@ -26,9 +24,11 @@ def jogar():
             if(chute == letra):
                 letras_acertadas[index] = letra
                 acertou_letra = True
-                               
-            index += 1
 
+            index += 1
+            
+        print("\n",letras_acertadas)
+        
         if (acertou_letra): 
             print("A palavra possui a letra {}!".format(chute))
             acertou_letra = False
@@ -36,12 +36,14 @@ def jogar():
             print("Errou! Você tem mais {} tentativa(s).".format(chances-erros))
             erros += 1
             if (erros == chances):
-                enforcou = True
+                break
         
-        acertou = "_" not in letras_acertadas
-        print("\n",letras_acertadas)
+        
+        if ("_" not in letras_acertadas):
+            break
+        
     
-    if(acertou):
+    if("_" not in letras_acertadas):
         print("Você ganhou!")
         
     else:
