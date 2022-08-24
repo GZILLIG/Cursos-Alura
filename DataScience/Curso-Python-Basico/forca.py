@@ -6,8 +6,9 @@ def jogar():
     palavra_secreta = "banana"
     palavra_secreta = palavra_secreta.strip().upper()
     
-    letras_acertadas = ["_","_","_","_","_","_"]
-    print("Palavra:",letras_acertadas)
+    letras_acertadas = ["_" for letra in palavra_secreta]
+    
+    print("Sua palavra tem {} letras.".format(len(letras_acertadas)))
 
     erros = 0
     chances = 6
@@ -15,7 +16,7 @@ def jogar():
 
 
     while(True):
-        chute = input("Qual letra?\n")
+        chute = input("Qual letra que tentar?\n")
         chute = chute.strip().upper()
 
         index = 0
@@ -26,7 +27,7 @@ def jogar():
                 acertou_letra = True
 
             index += 1
-            
+
         print("\n",letras_acertadas)
         
         if (acertou_letra): 
@@ -53,4 +54,3 @@ def jogar():
 
 if(__name__ == "__main__"):
     jogar()
- 
