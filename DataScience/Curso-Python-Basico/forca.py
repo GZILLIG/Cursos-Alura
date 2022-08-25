@@ -5,8 +5,6 @@ def jogar():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    sqltxt_palavras = open("/home/gabriel/Área de Trabalho/Cursos-Alura/DataScience/Curso-Python-Basico/palavras.txt", "r")
-    palavras = []
     
     for linha in sqltxt_palavras:
         linha = linha.strip().upper()
