@@ -20,7 +20,7 @@ def jogar():
 
         acertou_letra = verifica_se_letra_esta_na_palavra_secreta(palavra_secreta, letras_acertadas, chute)
 
-        print("\n",letras_acertadas) #exibe a string palavras acertadas
+        print("\n",'  '.join(letras_acertadas),"\n") #exibe a string palavras acertadas
         
         if (acertou_letra): #mensagem de acerto
             print("A palavra possui a letra {}!".format(chute))
