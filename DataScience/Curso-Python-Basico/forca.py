@@ -61,6 +61,7 @@ def jogar():
         
     else:
         print("\nVocê foi enforcado!")
+        print("A palavra secreta era",palavra_secreta)
 
     print("\n***********Fim do jogo***********")
 
