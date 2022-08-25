@@ -1,3 +1,5 @@
+import random
+
 def jogar():
     print("*********************************")
     print("***Bem vindo ao jogo da Forca!***")
@@ -7,15 +9,14 @@ def jogar():
     palavras = []
     
     for linha in sql_palavras:
-        linha = linha.strip()
+        linha = linha.strip().upper()
         palavras.append(linha)
-    
+        
     sql_palavras.close()
     
-    print(palavras)
-    
-    palavra_secreta = "banana"
-    palavra_secreta = palavra_secreta.strip().upper()
+    index_palavra_secreta = random.randrange(0,len(palavras))
+        
+    palavra_secreta = palavras[index_palavra_secreta]
     
     letras_acertadas = ["_" for letra in palavra_secreta]
     
