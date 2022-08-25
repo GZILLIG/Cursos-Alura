@@ -3,16 +3,16 @@ def jogar():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    sql_palavras = open("palavras.txt", "r")
+    sql_palavras = open("/home/gabriel/Área de Trabalho/Cursos-Alura/DataScience/Curso-Python-Basico/palavras.txt", "r")
     palavras = []
     
     for linha in sql_palavras:
-        linha=linha.strip()
+        linha = linha.strip()
         palavras.append(linha)
     
     sql_palavras.close()
     
-    print(sql_palavras)
+    print(palavras)
     
     palavra_secreta = "banana"
     palavra_secreta = palavra_secreta.strip().upper()
