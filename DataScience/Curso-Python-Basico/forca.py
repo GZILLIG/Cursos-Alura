@@ -12,7 +12,7 @@ def jogar():
     
     #Criação de variáveis globais
     erros = 0
-    chances = 6
+    chances = 8
 
 
     while(True): #Cria um loop infinito, até encontrar um break
@@ -26,6 +26,7 @@ def jogar():
             print("A palavra possui a letra {}!".format(chute))
             acertou_letra = False
         else: #messagem de erro
+            desenha_forca(erros)
             print("Errou! Você tem mais {} tentativa(s).".format(chances-erros))
             erros += 1 #contabiliza o erro
             if (erros == chances):
@@ -37,11 +38,10 @@ def jogar():
         
     
     if("_" not in letras_acertadas):
-        print("Você ganhou!")#Se todas as letras foram descobertas, mensagem de vitória
-        
+        imprime_mensagem_vencedor()
+                
     else:
-        print("\nVocê foi enforcado!")#se as chances se acabarem, mensagem de derrota
-        print("A palavra secreta era",palavra_secreta)
+        imprime_mensagem_perdedor(palavra_secreta)
 
     print("\n***********Fim do jogo***********")
 
@@ -84,7 +84,89 @@ def imprime_mensagem_de_abertura():
         print("*********************************")
         print("***Bem vindo ao jogo da Forca!***")
         print("*********************************")
+        
+def imprime_mensagem_vencedor():
+    print("Parabéns, você ganhou!")
+    print("       ___________      ")
+    print("      '._==_==_=_.'     ")
+    print("      .-\\:      /-.    ")
+    print("     | (|:.     |) |    ")
+    print("      '-|:.     |-'     ")
+    print("        \\::.    /      ")
+    print("         '::. .'        ")
+    print("           ) (          ")
+    print("         _.' '._        ")
+    print("        '-------'       ")
+        
+def imprime_mensagem_perdedor(palavra_secreta):
+    print("Puxa, você foi enforcado!")
+    print("A palavra era {}".format(palavra_secreta))
+    print("    _______________         ")
+    print("   /               \       ")
+    print("  /                 \      ")
+    print("//                   \/\  ")
+    print("\|   XXXX     XXXX   | /   ")
+    print(" |   XXXX     XXXX   |/     ")
+    print(" |   XXX       XXX   |      ")
+    print(" |                   |      ")
+    print(" \__      XXX      __/     ")
+    print("   |\     XXX     /|       ")
+    print("   | |           | |        ")
+    print("   | I I I I I I I |        ")
+    print("   |  I I I I I I  |        ")
+    print("   \_             _/       ")
+    print("     \_         _/         ")
+    print("       \_______/           ")
+    
+def desenha_forca(erros):
+    print("  _______     ")
+    print(" |/      |    ")
 
+    if(erros == 1):
+        print(" |      (_)   ")
+        print(" |            ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 2):
+        print(" |      (_)   ")
+        print(" |      \     ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 3):
+        print(" |      (_)   ")
+        print(" |      \|    ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 4):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 5):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |            ")
+
+    if(erros == 6):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      /     ")
+
+    if (erros == 7):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      / \   ")
+
+    print(" |            ")
+    print("_|___         ")
+    print()
 if(__name__ == "__main__"): #Como inserimos o programa todo dentro de uma função, ele só é executado quando chamada. Este if chama a função 'jogar()' caso abrirmos o arquivo forca.py diretamente.
     jogar()
 
