@@ -5,14 +5,14 @@ def jogar():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    sql_palavras = open("/home/gabriel/Área de Trabalho/Cursos-Alura/DataScience/Curso-Python-Basico/palavras.txt", "r")
+    sqltxt_palavras = open("/home/gabriel/Área de Trabalho/Cursos-Alura/DataScience/Curso-Python-Basico/palavras.txt", "r")
     palavras = []
     
-    for linha in sql_palavras:
+    for linha in sqltxt_palavras:
         linha = linha.strip().upper()
         palavras.append(linha)
         
-    sql_palavras.close()
+    sqltxt_palavras.close()
     
     index_palavra_secreta = random.randrange(0,len(palavras))
         
@@ -20,7 +20,7 @@ def jogar():
     
     letras_acertadas = ["_" for letra in palavra_secreta]
     
-    print("Sua palavra tem {} letras.".format(len(letras_acertadas)))
+    print("\n Sua palavra tem {} letras.".format(len(letras_acertadas)))
 
     erros = 0
     chances = 6
