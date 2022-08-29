@@ -5,7 +5,8 @@
 
 <h3>Estrutura de dados</h3>
 Os dados podem estar organizados das seguintes formas: 
-* **Estruturado**: Tabelas de banco de dados, com valores dividos por colunas e linhas, de forma que os dados já estejam catalogados e de fácil acesso para consulta. (Ex.: SQL, planilha de Excel)
+
+**Estruturado**: Tabelas de banco de dados, com valores dividos por colunas e linhas, de forma que os dados já estejam catalogados e de fácil acesso para consulta. (Ex.: SQL, planilha de Excel)
 * **Semi-Estruturado**: Geralmente em formatos como .json, .xml .csv. Os dados possuem a informação necessária, mas ainda n]ao estão em formato de tabela, sendo necessário rodar algum software ou código para extrair essas informações.
 * **Não-estruturado**: São dados brutos, sem classificação alguma. A informação está lá, mas sua extração não é simples, por exemplo (áudios, videos, imagens, textos não catalogados)
 
