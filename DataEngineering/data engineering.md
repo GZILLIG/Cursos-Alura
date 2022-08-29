@@ -3,12 +3,14 @@
 <h2>Conceitos/ Glossário:</h2>
 
 
-<h3>Estrutura de dados</h3>: Os dados podem estar organizados das seguintes formas: 
+<h3>Estrutura de dados</h3>
+Os dados podem estar organizados das seguintes formas: 
 * **Estruturado**: Tabelas de banco de dados, com valores dividos por colunas e linhas, de forma que os dados já estejam catalogados e de fácil acesso para consulta. (Ex.: SQL, planilha de Excel)
 * **Semi-Estruturado**: Geralmente em formatos como .json, .xml .csv. Os dados possuem a informação necessária, mas ainda n]ao estão em formato de tabela, sendo necessário rodar algum software ou código para extrair essas informações.
 * **Não-estruturado**: São dados brutos, sem classificação alguma. A informação está lá, mas sua extração não é simples, por exemplo (áudios, videos, imagens, textos não catalogados)
 
 <h3>Conceitos de armazenamento</h3>
+
 **Data Warehouse**: Em tradução livre "Armazém de dados", é mais próximo do  conceito dos tradicionais servidores de armazenamento, quando os dados da empresa estão guardados. Nessa modalidade, os dados já estão organizados e de forma estruturada, disponível para fácil consulta. Vale lembrar que, idealmente, os data warehouses são uma estrutura de armazenamento *à parte* dos banco de dados operacionais da empresa. Aqui, os dados já foram limpos, padronizados e integrados dos demais sistemas. Por exemplo, um e-commerce tem um sistema web, um sistema fiscal SAP e um sistema de estoque Oracle. O data warehouse existe para unificar todas as informações, mesmo que os sistemas não se comuniquem.
 
 **Data Silo**: É a forma mais tradicional de armazenamento de dados. São os dados operacinais dos sistemas da empresa.
