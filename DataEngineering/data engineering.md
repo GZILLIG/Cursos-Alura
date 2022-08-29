@@ -24,6 +24,7 @@ Os dados podem estar organizados das seguintes formas:
 
 <h3>Processos dos dados</h3>
 Siglas muito comuns de serem vistam são ETL e ELT. As letras significam:
+
 * **E**xtract (Extrair)
 * **T**ransform (Transformar, ou Tratar)
 * **L**oad (Carregar)
@@ -41,9 +42,11 @@ No *ELT*, a informação é extraida de uma fonte e já armazenada, para só ap�
 
 
 <h3>Softwares utilizados em Engenharia de dados:</h3>
-* Agendadores (Apache Airflow): Programas especializados em conectar com uma fonte (banco de dados, API, webserver, etc), e agendar as tarefas de extração de forma automatizada.
 
-* Processadores de dados: (Apache Spark, Apache Beam): Geralmente trabalham já em conjunto com os agendadores, e com base em um código feito pelo Engenheiro de Dados, começa a transformar o dado bruto em dados mais estruturados, podendo ter vários estágios de transformação.
+* **Agendadores** (Apache Airflow): Programas especializados em conectar com uma fonte (banco de dados, API, webserver, etc), e agendar as tarefas de extração de forma automatizada.
+
+* **Processadores de dados** (Apache Spark, Apache Beam): Geralmente trabalham já em conjunto com os agendadores, e com base em um código feito pelo Engenheiro de Dados, começa a transformar o dado bruto em dados mais estruturados, podendo ter vários estágios de transformação.
 
 <h3>Especificações para aquisição de dados:</h3>
+
 Geralmente, os dados que irão ser analisados são especificados por um departamento estratégico, como o Marketing. é fundamental que nessa especificação esteja claro quais dados serão extraídos e como eles devem ser tratados. É preciso ter clareza nessa etapa, pois se a especificação não estiver clara, é possível termos o excesso ou falta de dados no final do processo.
