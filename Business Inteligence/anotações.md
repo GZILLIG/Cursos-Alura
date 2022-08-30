@@ -38,7 +38,6 @@ Por exemplo:
 Faz muito mais sentido criarmos uma tabela de fato contendo apenas dados cadastrais dos Clientes, e atribuir um código para cada cliente.
 Dessa forma, quando consultarmos o registro de venda, teremos apenas um campo: Código do Cliente.
 
-Essa lógica contribui tanto para a organização do banco de dados, quanto para a eficiência do armazenamento, reaproveitando informações ao invés de repeti-las.
 
 **Existem então dois modelos de tabelas de dimensão:**
 
@@ -68,3 +67,6 @@ Nesse caso, criamos a tabela pai-filho-nivel, que irá atribuir um número índi
 Exemplo: O custo de energia elétrica é medido de segundo em segundo (em tempo, real, na verdade) pelo medidor de energia - porém a granularidade que a conta de luz apresenta, é de mês em mês.
 
 Em resumo, é importante se atentar para que a periodicidade seja frequente o suficiente para atender as informações da menor Granularidade do seu BI.
+* * **Tabela ODS**: Quando temos uma Periodicidade menor (ou seja, com uma frenquencia alta) e uma Granularidade de periodos maiores, armazenamos esses dados ao longo do tempo numa ODS (Operational Data Storage). Esse banco de dados tem como função armazenar dados, para que sejam extraídos futuramente, na frenquencia que a Granularidade pede. O ODS então é apagado, e o processo reinicia.
+
+<h3>OLAP - Online Analytical Processing</h3>
