@@ -70,3 +70,63 @@ Em resumo, é importante se atentar para que a periodicidade seja frequente o su
 * * **Tabela ODS**: Quando temos uma Periodicidade menor (ou seja, com uma frenquencia alta) e uma Granularidade de periodos maiores, armazenamos esses dados ao longo do tempo numa ODS (Operational Data Storage). Esse banco de dados tem como função armazenar dados, para que sejam extraídos futuramente, na frenquencia que a Granularidade pede. O ODS então é apagado, e o processo reinicia.
 
 <h3>OLAP - Online Analytical Processing</h3>
+
+As estruturas transacionais (OLTP) de bancos de dados, como o Star Schema, podem ser muito bons do ponto de vista de organização da informação, mas quando vamos fazer consultas cruzando informações o desenpenho dessas arquiteturas deixa a desejar.
+
+Imagine que para buscar uma informação como "Todas as vendas para clientes com caracteristica X", teriamos que fazer Scan em várias tabelas (já que a informação está distribuída), para chegar no resultado. Isso não é eficiente para o BI.
+
+OLAP foi a solução imaginada para esse problema, que tem como principal caracteristica "pivotear" os dados da tablea com mais facilidade. Os dados nele, são organizados por fórmulas matemáticas. 
+
+* Por exemplo, na dimensão produtos de uma adega
+
+```
+Suco = Suco de Laranja + Suco de Maça
+Águas = Água com Gás + Agua sem Gás 
+Todos os produtos = Sucos + Águas
+```
+Dessa forma, as relações dimensionais são criadas no OLAP.
+
+Suponhamos que queremos fazer um cruzamento de dados entre as dimensões Cliente e Produto.
+
+A estrutura OLAP irá criar uma tabela grande, onde temos TODOS os membros da dimensão *Cliente* nas linhas, e TODOS os membros da dimensão *Produto* nas colunas. Dessa forma, todos as informações são colocadas em um único plano.
+Assim, os dados ficam prontos para serem acessados utilizando uma fração do esforço que seria consultar o banco de dados OLTP.
+
+Sendo assim, o OLAP é construido baseado **no tipo de análise que vamos fazer**. Ele construidá uma matriz que será calculada previamente e irá armazenar os dados de TODAS os cruzamentos de dados possível. Por isso, as matrizes OLAPs são gigantescas e aumentam exponencialmente o número de dados.
+
+Existe um indicador que avalia o quanto dessas informações pré-calculadas são realmente úteis.
+
+```
+densidade =  Número de Combinações Reais
+               -----------------------------
+               Número de Combinações Possíveis
+```
+
+Precisamos manter o equilíbrio entre poder computacional e armazenamento. Para isso, existe 3 tipos de OLAPs:
+
+* **MOLAP - Multidimensional OLAP**: É o modelo descrito acima, onde todos os cruzamentos de dados possíveis são pré-calculados e armazenados. É o que possui o melhor desempenho para consulta, porém pode tem facilmente bilhões ou trilhões de combinações, o que faz ele gigantesco e demandar muito tempo para ser calculado.
+
+* **HOLAP - Hibrid OLAP**: Cria a matriz capenas com dados mais consolidados (por exemplo, total de vendas, total de entregas), e deixa as consultas mais específicas serem pesquisadas pela tabela de fato. Os relatórios feitos pelo Holaps não deixam transparente se o dado veio da matriz ou da tabela de fato.
+
+* **ROLAP - Relational OLAP**: Consolida a matriz OLAP apenas no momento da consulta, e armazena esses resultados em cache. Dessa forma, a matriz vai crescendo conforme as solicitações, deixando mais fácil acesso para as relações de dados mais frequentes. Oferecem o melhor equilíbrio entre esforço computacional e tamanho de armazenamento.
+
+<h3>Resumindo o Fluxo do BI e Data Warehouse</h3>
+1. Matriz (identificar quais dados são necessários);
+2. Construção do Data Warehouse;
+3. Identificação das fontes de dados;
+4. Criação do processo de ETL e/ou construção de ODS;
+5. Carga do Data Warehouse;
+6. Criação e carga dos OLAPs;
+7. Construção e criação dos aplicativos para consulta dos; dados por parte dos usuários.
+
+<h3>Glossário de outros termos</h3>
+* Data Minning: Ciência de dados, tende a identificar padrõesde comportamento nos dados do passado e criar insights para o futuro
+
+* Balance ScoreCard: Determinar em uma linguagem simples as métricas da empresa (KPI), onde fica claro qual é o status daquele objeto de estudo. Por exemplo: A eficiência da produção está em amarelo, ou então as  vendas estão em verde.
+
+* Big Data: Engenharia de dados, é a carga de dados de uma massa de dados de tráfego de informações (Data Lake).
+
+<h3>Valores Importantes de BI</h3>
+
+* **Democratizar a Informação** : Não basta cirar um DW eficiente, é preciso disponibilizar aos usuários envolvidos no processos, formas de eles mesmos fazerem suas consultas. O BI gera relatórios específicos geralmente para um grupo pequeno, e o restante dos envolvidos não pode depender apenas desses relatórios.
+
+
