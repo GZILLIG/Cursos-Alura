@@ -1,4 +1,4 @@
-<h1> Business Intelligence </h1>
+<h1> Business Intelligence - Data Warehouse </h1>
 
 <h2>Primeiros Conceitos</h2>
 O BI surge a partir da necessidade empresarial de analisar dados, que podem vir de dentro da própria empresa ou de fora. Transformar **dados** em **informações** para auxiliar na tomada de decisões, é a principal missão do BI.
