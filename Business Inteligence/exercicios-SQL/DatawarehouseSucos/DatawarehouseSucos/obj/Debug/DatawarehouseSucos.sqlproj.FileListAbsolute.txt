@@ -7,4 +7,3 @@ C:\Users\Gabriel\Desktop\Cursos-Alura\Business Inteligence\exercicios-SQL\Datawa
 C:\Users\Gabriel\Desktop\Cursos-Alura\Business Inteligence\exercicios-SQL\DatawarehouseSucos\DatawarehouseSucos\obj\Debug\refactor.xml
 C:\Users\Gabriel\Desktop\Cursos-Alura\Business Inteligence\exercicios-SQL\DatawarehouseSucos\DatawarehouseSucos\obj\Debug\postdeploy.sql
 C:\Users\Gabriel\Desktop\Cursos-Alura\Business Inteligence\exercicios-SQL\DatawarehouseSucos\DatawarehouseSucos\obj\Debug\predeploy.sql
-C:\Users\Gabriel\Desktop\Cursos-Alura\Business Inteligence\exercicios-SQL\DatawarehouseSucos\DatawarehouseSucos\obj\Debug\DatawarehouseSucos.sqlproj.AssemblyReference.cache
