@@ -14,7 +14,124 @@
       <Dimension>
         <ID>Fabrica</ID>
       </Dimension>
+      <Dimension>
+        <ID>Dados Do Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Produto</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Organizacional</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tempo</ID>
+      </Dimension>
     </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>DW SUCOS</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fato Vendas Custos</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Vendas Custos</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Frete</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Frete</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Meta Faturamento</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Meta Faturamento</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Custos</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fato Vendas Custos</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Vendas Custos</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Custo Fixo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Custo Fixo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Meta Custos</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Meta Custos</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Presidencia</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fato Meta Custos</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Meta Custos</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Meta Faturamento</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Meta Faturamento</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Custo Fixo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Custo Fixo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Vendas Custos</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Vendas Custos</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fato Frete</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Frete</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
       <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>

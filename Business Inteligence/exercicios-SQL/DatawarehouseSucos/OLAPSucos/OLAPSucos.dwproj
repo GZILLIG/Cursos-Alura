@@ -6,10 +6,58 @@
     <Name>OLAPSucos.database</Name>
     <FullPath>OLAPSucos.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Vendas.cube</Name>
+      <FullPath>Vendas.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Vendas.partitions</Name>
+          <FullPath>Vendas.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Custos.cube</Name>
+      <FullPath>Custos.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Custos.partitions</Name>
+          <FullPath>Custos.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Presidencia.cube</Name>
+      <FullPath>Presidencia.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Presidencia.partitions</Name>
+          <FullPath>Presidencia.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Fabrica.dim</Name>
       <FullPath>Fabrica.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dados Do Cliente.dim</Name>
+      <FullPath>Dados Do Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Produto.dim</Name>
+      <FullPath>Produto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Organizacional.dim</Name>
+      <FullPath>Organizacional.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tempo.dim</Name>
+      <FullPath>Tempo.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

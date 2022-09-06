@@ -19,29 +19,78 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>XUWheydm/0tznX+c6H5LWp+EamM=01/09/2022 23:03:4501/09/2022 22:11:32</TimeStamp>
+        <TimeStamp>XUWheydm/0tznX+c6H5LWp+EamM=01/09/2022 23:03:4505/09/2022 22:58:10</TimeStamp>
         <ID>
           <String>DW SUCOS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>+I6qSyeiT+Cd7Ikvv1r2/JsoC4U=01/09/2022 22:46:0901/09/2022 22:15:09</TimeStamp>
+        <TimeStamp>QtiS9OGeqDgEaNOzOo1GkTftslw=01/09/2022 19:34:4205/09/2022 23:01:53</TimeStamp>
         <ID>
           <String>DW SUCOS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>pAw+5t2rf7HVEAzYTHS4aP52pW8=01/09/2022 22:49:3601/09/2022 22:46:09</TimeStamp>
+        <TimeStamp>pAw+5t2rf7HVEAzYTHS4aP52pW8=01/09/2022 22:49:3605/09/2022 22:58:10</TimeStamp>
         <ID>
           <String>Fabrica</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4jtZfidWU3gw37aoplByrZQhR+A=02/09/2022 11:55:2105/09/2022 22:58:10</TimeStamp>
+        <ID>
+          <String>Dados Do Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B47T/U3uL56dblH2Li5+94iu4Xs=02/09/2022 12:06:2205/09/2022 22:58:10</TimeStamp>
+        <ID>
+          <String>Produto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4E1RHGFk+/cbRn5NIftwI23EIng=02/09/2022 13:36:1705/09/2022 22:58:10</TimeStamp>
+        <ID>
+          <String>Organizacional</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mQfc/BdvYJYfCSzGjzNyVJUMTqQ=02/09/2022 14:26:5305/09/2022 22:58:10</TimeStamp>
+        <ID>
+          <String>Tempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>TAwNPJeUqGhAAqLqVBcIvXmDzCc=06/09/2022 18:24:3306/09/2022 18:14:02r4tmjTJSjcTCbvYTJ0iyo2TzTUU=06/09/2022 18:14:0206/09/2022 18:14:02</TimeStamp>
+        <ID>
+          <String>DW SUCOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>mhQkQzn7w8d3vTEhPmrxPKlXiF8=06/09/2022 18:31:1006/09/2022 18:28:22KZSYoLzClnp7VvGyW5z2Qgu3cwM=06/09/2022 18:28:2206/09/2022 18:28:22</TimeStamp>
+        <ID>
+          <String>Custos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>cOFOA5eulxvt3lksPTeJKveCs+o=06/09/2022 18:38:3006/09/2022 18:32:24t8qiJ2KJ+hWs9199ik29ePbhQg0=06/09/2022 18:32:2406/09/2022 18:32:24</TimeStamp>
+        <ID>
+          <String>Presidencia</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>d9jn6Oe7RjpL0XG467uRsylyXPA=01/09/2022 22:07:3301/09/2022 22:07:33</TimeStamp>
+      <TimeStamp>d9jn6Oe7RjpL0XG467uRsylyXPA=01/09/2022 22:07:3305/09/2022 22:58:10</TimeStamp>
       <ID>
         <String>OLAPSucos</String>
       </ID>
@@ -50,5 +99,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2022-09-02T02:03:49.9Z</LastDeployed>
+  <LastDeployed>2022-09-06T21:39:15.903333Z</LastDeployed>
 </DeploymentSnapshot>
