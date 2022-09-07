@@ -1,0 +1,30 @@
+	/*SELECT
+		FILTER ( //INICIA O FILTER
+			({[Produto].[Hierarquia de Produtos].[Nivel Marca].MEMBERS})
+		,//FECHA O CONTEUDO A SER FILTRADO
+		[Measures].[Faturamento] >= 10000000  //CRITÉRIO DE FILTRO
+		) //FECHA O FILTER
+	ON ROWS,
+	({[Measures].[Faturamento]})
+	ON COLUMNS
+	FROM [Completo] WHERE [Tempo].[Ano].&[2014] */
+
+	//ADICIONANDO O ORDER
+
+SELECT
+	FILTER ( //INICIA FILTER
+		ORDER( //INICIA ORDER
+			({[Produto].[Hierarquia de Produtos].[Nivel Marca].MEMBERS})
+			, //FECHA CONTEUDO DO ORDER
+			[Measures].[Faturamento], BDESC //CRITÉRIO DO ORDER
+			)// FECHA O ORDER
+		,//FECHA O CONTEUDO A SER FILTRADO
+		[Measures].[Faturamento] >= 10000000  //CRITÉRIO DE FILTRO
+		) //FECHA O FILTER
+	ON ROWS,
+	({[Measures].[Faturamento]})
+	ON COLUMNS
+	FROM [Completo] WHERE [Tempo].[Ano].&[2014]
+
+	//OBS.: O order tem uma limitação, ele apenas ordena indicadores.
+	//Se for colocado uma dimenão, não é possivel estabelecer um critério

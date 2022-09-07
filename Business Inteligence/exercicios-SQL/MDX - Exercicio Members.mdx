@@ -1,0 +1,6 @@
+SELECT
+	({[Produto].[Produto].MEMBERS})
+	ON ROWS,
+	({[Measures].[Faturamento]})
+	ON COLUMNS
+	FROM [Completo] WHERE ([Dados Do Cliente].[Cliente].&[BIG Burger])

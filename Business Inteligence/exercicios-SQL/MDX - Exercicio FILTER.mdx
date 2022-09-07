@@ -1,0 +1,19 @@
+/*SELECT
+	({[Produto].[Hierarquia de Produtos].[Nivel Marca].MEMBERS})
+	ON ROWS,
+	({[Measures].[Faturamento]})
+	ON COLUMNS
+	FROM [Completo] WHERE [Tempo].[Ano].&[2014] */
+
+	//PORÉM QUER VIZUALIZAR APENAS FATURAMENTO ACIMA DE 10 MILHÕES
+
+	SELECT
+		FILTER ( //INICIA O FILTER
+			({[Produto].[Hierarquia de Produtos].[Nivel Marca].MEMBERS})
+		,//FECHA O CONTEUDO A SER FILTRADO
+		[Measures].[Faturamento] >= 10000000  //CRITÉRIO DE FILTRO
+		) //FECHA O FILTER
+	ON ROWS,
+	({[Measures].[Faturamento]})
+	ON COLUMNS
+	FROM [Completo] WHERE [Tempo].[Ano].&[2014]

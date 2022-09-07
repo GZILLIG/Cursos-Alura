@@ -1,0 +1,9 @@
+SELECT NON EMPTY HIERARCHIZE
+	({ [Dados Do Cliente].[Estado].&[São Paulo],
+		[Dados Do Cliente].[Estado].&[Goiais],
+		[Dados Do Cliente].[Estado].&[Paraná],
+		[Dados Do Cliente].[Estado].&[Bahia] })
+	ON ROWS,
+	({[Tempo].[Semestre e Ano].MEMBERS})
+	ON COLUMNS
+	FROM [Completo]
