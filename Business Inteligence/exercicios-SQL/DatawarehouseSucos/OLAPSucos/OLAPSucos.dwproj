@@ -37,6 +37,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Completo.cube</Name>
+      <FullPath>Completo.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Completo.partitions</Name>
+          <FullPath>Completo.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
