@@ -1,8 +1,10 @@
-# Cursos Realizados na Alura
+**Cursos Realizados na Alura**
 
 <h1> Business Inteligence </h1>
 
-<h2> BI e Data Warehouse com SQL Server e Power BI</h2>
+<h2> 1. FORMAÇÃO - BI e Data Warehouse com SQL Server e Power BI</h2>
+
+![Formação BI com SQL Server](/Formacao-BI-SQLServer.jpg)
 
 [Certificado](https://cursos.alura.com.br/degree/certificate/a98a0acd-0a7d-4a6d-b710-b01d7571cdd0/)
 
@@ -14,6 +16,12 @@
 * Power BI
 * Processo ETL
 
+<details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSA FORMAÇÃO</summary>
+
+**Softwares utilizados:**
+
+![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
+
 **Conceitos abordados:**
 * Construção e modelagem de dados de um Datawarehouse em SQL Server;
 * Extração de dados mock-up da empresa (Fontes de dados diversas: Planilha de Excel, .csv, .txt, .bak (SQL));
@@ -23,13 +31,6 @@
 * Criação de medidas calculadas;
 * Consultas básicas e avançadas em linguagem multi-dimensional (MDX);
 * Introdução a visualização de dados via Power BI e publicação de dashboards.
-
-
-**Softwares utilizados:**
-
-![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
-
-<details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSA FORMAÇÃO</summary>
 
 **Anotações:**
 >[Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
@@ -46,4 +47,32 @@
 
 ![Processo ETL - Visual Studio](/Business%20Inteligence/SQL-MDX/ETL-VisualStudio.jpg)
 ![Consulta MDX - SQL Analysis Server](/Business%20Inteligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
+</details>
+
+<br>
+<br>
+
+<h2> 2. CURSOS - Introdução à Python 3 </h2>
+
+Realizados dois cursos que fazem uma introdução ao Python. Durante o curso, a proposta foi praticar criando jogos interativos via console.
+
+![Cursos Python](/Curso-python-1.jpg)
+
+**Conceitos abordados:**
+* Trabalhar acessando arquivos (Leitura e Gravação)
+* Formatação e decomposição de Strings
+* List Comprehensions
+
+<details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSE CURSO</summary>
+
+**Códigos-fonte desenvolvidos ao longo do curso:**
+>[Menu dos jogos](/Business%20Inteligence/Curso-Python-Basico/jogos.py) <br>
+>[Jogo da Forca](/Business%20Inteligence/Curso-Python-Basico/forca.py) <br>
+>[Jogo de Adivinhação](/Business%20Inteligence/Curso-Python-Basico/adivinhacao.py)
+
+**Screenshots**
+
+![VS Code](/Business%20Inteligence/Curso-Python-Basico/Python-VSCODE.jpg) <br>
+![Jogo da Forca](/Business%20Inteligence/Curso-Python-Basico/Jogo-Forca.jpg) <br>
+![Jogo Adivinhação](/Business%20Inteligence/Curso-Python-Basico/jogo-adivinhacao.jpg)
 </details>
