@@ -14,10 +14,6 @@
 * Power BI
 * Processo ETL
 
-**Softwares utilizados:**
-
-![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
-
 **Conceitos abordados:**
 * Construção e modelagem de dados de um Datawarehouse em SQL Server;
 * Extração de dados mock-up da empresa (Fontes de dados diversas: Planilha de Excel, .csv, .txt, .bak (SQL));
@@ -28,6 +24,12 @@
 * Consultas básicas e avançadas em linguagem multi-dimensional (MDX);
 * Introdução a visualização de dados via Power BI e publicação de dashboards.
 
+
+**Softwares utilizados:**
+
+![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
+
+<details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSA FORMAÇÃO</summary>
 **Anotações:**
 >[Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
 >[Conceitos de OLAP e ETL](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
@@ -43,3 +45,4 @@
 
 ![Processo ETL - Visual Studio](/Business%20Inteligence/SQL-MDX/ETL-VisualStudio.jpg)
 ![Consulta MDX - SQL Analysis Server](/Business%20Inteligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
+</details>
