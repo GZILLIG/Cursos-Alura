@@ -66,7 +66,7 @@ def cria_grid_underline_palavra(palavra_secreta):
 
 def carrega_palavra_secreta():
     #abre o arquivo "palavras.txt" e salva na lista sqltxt_palavras
-    sqltxt_palavras = open("/home/gabriel/Área de Trabalho/Cursos-Alura/DataScience/Curso-Python-Basico/palavras.txt", "r")
+    sqltxt_palavras = open("Business Inteligence\Curso-Python-Basico\palavras.txt", "r")
     palavras = [] #Cria uma lista vazia
     
     for linha in sqltxt_palavras: #extrai valor por valor da lista para a string linha
