@@ -47,6 +47,7 @@
 
 ![Processo ETL - Visual Studio](/Business%20Inteligence/SQL-MDX/ETL-VisualStudio.jpg)
 ![Consulta MDX - SQL Analysis Server](/Business%20Inteligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
+![Dashboard PowerBI](/Business%20Inteligence/PowerBI/PowerBI.gif)
 </details>
 
 <br>
