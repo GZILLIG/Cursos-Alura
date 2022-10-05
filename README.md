@@ -17,8 +17,10 @@ Conceitos abordados:
 * Introdução a visualização de dados via Power BI e publicação de dashboards.
 
 Anotações:
-> * [Conceitos de Datawarehouse](Business Inteligence\anotações Conceitos de Datawarehouse.md "Datawarehouse");
-> * [Conceitos de OLAP e ETL](Business Inteligence\anotações Conceitos de ETL.md "ETL");
+
+![Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md "Datawarehouse")
+
+![Conceitos de OLAP e ETL](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md "ETL")
 
 
 
