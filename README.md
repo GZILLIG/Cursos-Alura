@@ -30,6 +30,7 @@
 ![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
 
 <details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSA FORMAÇÃO</summary>
+
 **Anotações:**
 >[Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
 >[Conceitos de OLAP e ETL](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
