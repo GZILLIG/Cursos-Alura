@@ -58,6 +58,9 @@ Realizados dois cursos que fazem uma introdução ao Python. Durante o curso, a 
 
 ![Cursos Python](/Curso-python-1.jpg)
 
+[Certificado "Python: Começando com a Linguagem"](https://cursos.alura.com.br/certificate/6609c36e-8fd8-4fd9-aa7a-239c5eb557df/) <br>
+[Certificado "Python: Avançando com a Linguagem"](https://cursos.alura.com.br/certificate/e2abcd24-3372-453f-b1c5-6d7aa9f9f585/)
+
 **Conceitos abordados:**
 * Trabalhar acessando arquivos (Leitura e Gravação)
 * Formatação e decomposição de Strings
