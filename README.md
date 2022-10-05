@@ -6,7 +6,17 @@
 
 <p> Nesse curso o objetivo é elaborar, desde o projeto, a construção de um sistema de BI para uma fábrica fictícia de Suco de Frutas.
 
-Conceitos abordados:
+**Tecnologias utilizadas:**
+* SQL
+* MDX
+* Power BI
+* Processo ETL
+
+**Softwares utilizados:**
+
+![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
+
+**Conceitos abordados:**
 * Construção e modelagem de dados de um Datawarehouse em SQL Server;
 * Extração de dados mock-up da empresa (Fontes de dados diversas: Planilha de Excel, .csv, .txt, .bak (SQL));
 * Transformação dos dados - Desmembramento de Strings, separação por colunas, limpeza de dados vazios e repetidos;
@@ -17,10 +27,13 @@ Conceitos abordados:
 * Introdução a visualização de dados via Power BI e publicação de dashboards.
 
 Anotações:
+>[Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
+>[Conceitos de OLAP e ETL](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
 
-![Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md "Datawarehouse")
-
-![Conceitos de OLAP e ETL](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md "ETL")
-
-
+Arquivos criados ao longo do curso:
+>[Criação do banco SQL Server](/Business%20Inteligence/SQL-MDX/DatawarehouseSucos/DatawarehouseSucos/)<br>
+>[Carga e Transformação dos dados](/Business%20Inteligence/SQL-MDX/DatawarehouseSucos/CargaDatawarehouse/)<br>
+>[Criação do banco de dados OLAP](/Business%20Inteligence/SQL-MDX/DatawarehouseSucos/OLAPSucos/)<br>
+>[Consultas em MDX](/Business%20Inteligence/SQL-MDX/)
+>[Relatórios em PowerBI](/Business%20Inteligence/PowerBI/)
 
