@@ -1,0 +1,15 @@
+SELECT NON EMPTY ({
+[Tempo].[Hierarquia do Mês e Ano].[Ano].&[2014].&[2014]&[01-2014].&[2014]&[01-2014]&[02-2014].&[2014]&[01-2014]&[02-2014]&[06-2014],
+[Tempo].[Hierarquia do Mês e Ano].[Ano].&[2014].&[2014]&[01-2014].&[2014]&[01-2014]&[02-2014].&[2014]&[01-2014]&[02-2014]&[06-2014].Lag(3)
+}) ON ROWS,
+({[Measures].[Faturamento]}) ON COLUMNS
+FROM [COMPLETO]
+//a função Lag seleciona 3 registros atrás da seleção original (Junho 2014)
+
+SELECT NON EMPTY ({
+[Tempo].[Hierarquia do Mês e Ano].[Ano].&[2014].&[2014]&[01-2014].&[2014]&[01-2014]&[02-2014].&[2014]&[01-2014]&[02-2014]&[06-2014],
+[Tempo].[Hierarquia do Mês e Ano].[Ano].&[2014].&[2014]&[01-2014].&[2014]&[01-2014]&[02-2014].&[2014]&[01-2014]&[02-2014]&[06-2014].Lead(5)
+}) ON ROWS,
+({[Measures].[Faturamento]}) ON COLUMNS
+FROM [COMPLETO]
+//a função Lead seleciona 5 registros à frente da seleção original (Junho 2014)

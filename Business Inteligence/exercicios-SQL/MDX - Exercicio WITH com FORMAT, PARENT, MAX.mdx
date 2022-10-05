@@ -1,0 +1,89 @@
+//EXEMPLO DA FUNÇÃO WITH E MEMBER
+
+WITH
+MEMBER [Measures].[Novo Faturarento Líquido] AS
+'[Measures].[Faturamento] - [Measures].[Frete Rateio] - [Measures].[Imposto]' //FAZ O MESMO CALCULO QUE JÁ ESTAVA NO OLAP, MAS DURANTE A CONSULTA
+SELECT ({[Produto].[Categoria].MEMBERS}) On Rows,
+({[Measures].[Faturamento], [Measures].[Faturamento LIquido], [Measures].[Novo Faturarento Líquido]}) On Columns
+from [COMPLETO]
+where ([Tempo].[Ano].&[2014])
+
+% Taxa Variação Trimestre], [% Taxa Variação Semestre], [% Taxa Variação Ano]}) on Columns from [COMPLETO]
+
+// EXEMPLO 2, COM FORMATAÇÃO DE STRING
+WITH
+MEMBER [Measures].[Novo Faturarento Líquido] AS
+'[Measures].[Faturamento] - [Measures].[Frete Rateio] - [Measures].[Imposto]', 
+FORMAT_STRING = '#,###.##' //FORMATA A STRING
+MEMBER [Measures].[Variação Faturamento] AS
+'[Measures].[Novo Faturarento Líquido] / [Measures].[Faturamento]', 
+FORMAT_STRING = '#,###.## %'
+SELECT ({[Produto].[Categoria].MEMBERS}) On Rows,
+({[Measures].[Faturamento], [Measures].[Faturamento Liquido], [Measures].[Novo Faturarento Líquido],
+[Measures].[Variação Faturamento]}) On Columns
+from [COMPLETO]
+where ([Tempo].[Ano].&[2014])
+
+//WITH COM OPERAÇÃO DE SOMA
+WITH MEMBER
+[Tempo].[Mês e Ano].[Soma] AS
+'SUM({
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[01-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[02-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[03-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[04-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[05-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[06-2013]},[Measures].[Margem])'
+SELECT ({
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[01-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[02-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[03-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[04-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[05-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[06-2013]
+,[Tempo].[Mês e Ano].[Soma]}) ON ROWS,
+[Measures].[Margem] ON COLUMNS
+FROM [COMPLETO]
+
+//WITH COM OPERAÇÃO DE MÉDIA. EXISTEM DIVERSOS OUTROS OPERADORES, COMO MAX, MIN, VAR, CORRELATION, ETC
+WITH MEMBER
+[Tempo].[Mês e Ano].[Média] AS
+'AVG({
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[01-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[02-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[03-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[04-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[05-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[06-2013]},[Measures].[Margem])'
+SELECT ({
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[01-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[02-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[03-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[04-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[05-2013]
+,[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[06-2013]
+,[Tempo].[Mês e Ano].[Média]}) ON ROWS,
+[Measures].[Margem] ON COLUMNS
+FROM [COMPLETO]
+
+//UTILIZANDO O WITH PARA CRIAR UM GRUPO DE ITENS
+WITH SET [6 Primeiros Meses de 2013] AS
+'{ [Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[01-2013],
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[02-2013],
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[01-2013]&[03-2013],
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[04-2013],
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[05-2013],
+[Tempo].[Mês e Ano].&[2013]&[01-2013]&[02-2013]&[06-2013]}'
+SELECT ({[6 Primeiros Meses de 2013]}) on rows,
+[Measures].[Faturamento Liquido] on columns
+from [COMPLETO]
+
+
+//USANDO PARENT PARA CHAMAR TODOS OS MEMBROS DE UMA HIERARQUIA
+WITH MEMBER [Measures].[% Taxa Variação Trimestre] AS
+'[Measures].[Faturamento] / 
+( [Measures].[Faturamento] , [Tempo].[Hierarquia do Mês e Ano].Currentmember.Parent )'
+, FORMAT_STRING = '#,###.## %'
+SELECT NON EMPTY 
+({[Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano].Members}) on Rows,
+({[Measures].[Faturamento], [Measures].[% Taxa Variação Trimestre]}) on Columns from [COMPLETO]

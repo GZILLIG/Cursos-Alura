@@ -1,0 +1,21 @@
+WITH MEMBER
+[Measures].[FATURAMENTO YTD] AS
+'Sum(PeriodsToDate([Tempo].[Hierarquia do Mês e Ano].[Ano], [Tempo].[Hierarquia do Mês e Ano].Currentmember),[Measures].[Faturamento])',
+//o PeriodsToDate permite selecionar uma faixa de tempo, e nesse caso, estamos somando todos os resultados à medida que a consulta avança (acumulado do ano)
+FORMAT_STRING = "##,###.00"
+SELECT NON EMPTY ({[Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano].MEMBERS})  ON ROWS,
+({[Measures].[Faturamento], [Measures].[FATURAMENTO YTD]}) ON COLUMNS
+FROM [COMPLETO]
+
+//Nesse exemplo o acumulado é reiniciado também a cada trimestre (quarter)
+WITH MEMBER
+[Measures].[FATURAMENTO YTD] AS
+'Sum(PeriodsToDate([Tempo].[Hierarquia do Mês e Ano].[Ano], [Tempo].[Hierarquia do Mês e Ano].Currentmember),[Measures].[Faturamento])',
+FORMAT_STRING = "##,###.00"
+MEMBER
+[Measures].[FATURAMENTO QTY] AS
+'Sum(PeriodsToDate([Tempo].[Hierarquia do Mês e Ano].[Nivel Trimestre e Ano], [Tempo].[Hierarquia do Mês e Ano].Currentmember),[Measures].[Faturamento])',
+FORMAT_STRING = "##,###.00"
+SELECT NON EMPTY ({[Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano].MEMBERS})  ON ROWS,
+({[Measures].[Faturamento], [Measures].[FATURAMENTO YTD], [Measures].[FATURAMENTO QTY]}) ON COLUMNS
+FROM [COMPLETO]

@@ -1,0 +1,10 @@
+WITH MEMBER [Measures].[Variação Faturamento] AS
+'[Measures].[Faturamento] - ([Measures].[Faturamento], [Tempo].[Hierarquia do Mês e Ano].Currentmember.PrevMember )', //Função Prevmember seleciona o membro anterior ao da pesquisa
+FORMAT_STRING = "##,###.00"
+MEMBER [Measures].[Variação Faturamento Percentual] AS
+'(([Measures].[Faturamento], [Tempo].[Hierarquia do Mês e Ano].Currentmember)/
+([Measures].[Faturamento], [Tempo].[Hierarquia do Mês e Ano].Currentmember.PrevMember )) - 1', //Mesma seleção do MEMBER acima, porém canculando diferença percentual.
+FORMAT_STRING = "##,###.00 %"
+select non empty {[Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano].members} on rows,
+{[Measures].[Faturamento], [Measures].[Variação Faturamento], [Measures].[Variação Faturamento Percentual] } on columns
+from [COMPLETO]

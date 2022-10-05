@@ -1,0 +1,18 @@
+WITH MEMBER [Measures].[Faturamento Desce 2]
+AS
+'([Measures].[Faturamento], ParallelPeriod([Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano], 6, [Tempo].[Hierarquia do Mês e Ano].Currentmember))', 
+// A ParallelPeriod desloca o resultado X numeros de tuplas à frente (nesse caso, 6)
+FORMAT_STRING = "#,###.00"
+SELECT ({[Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano].Members}) On Rows,
+({[Measures].[Faturamento], [Measures].[Faturamento Desce 2]}) On Columns
+FROM [COMPLETO]
+
+//No exemplo abaixo, foram deslocados 12 meses (1 ano) para comparar o faturamento de 2014 com 2013
+WITH MEMBER [Measures].[Variação Faturamento Ano]
+AS '([Measures].[Faturamento])/
+([Measures].[Faturamento], ParallelPeriod([Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano], 12, 
+[Tempo].[Hierarquia do Mês e Ano].Currentmember)) -1',
+FORMAT_STRING = "#,###.00 %"
+SELECT ({[Tempo].[Hierarquia do Mês e Ano].[Nivel Mês e Ano].Members}) On Rows,
+({[Measures].[Faturamento], [Measures].[Variação Faturamento Ano]}) On Columns
+FROM [COMPLETO]
