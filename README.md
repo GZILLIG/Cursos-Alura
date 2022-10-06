@@ -45,8 +45,8 @@
 **Screenshots das etapas de criação:**
 
 ![Processo ETL - Visual Studio](/Business%20Intelligence/SQL-MDX/ETL-VisualStudio.jpg)
-![Consulta MDX - SQL Analysis Server](/Business%20intelligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
-![Dashboard PowerBI](/Business%20intelligence/PowerBI/PowerBI.gif)
+![Consulta MDX - SQL Analysis Server](/Business%20Intelligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
+![Dashboard PowerBI](/Business%20Intelligence/PowerBI/PowerBI.gif)
 </details>
 
 <br>
