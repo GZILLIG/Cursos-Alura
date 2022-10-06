@@ -19,7 +19,7 @@
 
 **Softwares utilizados:**
 
-![Softwares](/Business%20intelligence/tecnologias-datawarehouse.jpg)
+![Softwares](/Business%20Intelligence/tecnologias-datawarehouse.jpg)
 
 **Conceitos abordados:**
 * Construção e modelagem de dados de um Datawarehouse em SQL Server;
@@ -32,19 +32,19 @@
 * Introdução a visualização de dados via Power BI e publicação de dashboards.
 
 **Anotações:**
->[Conceitos de Datawarehouse](/Business%20intelligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
->[Conceitos de OLAP e ETL](/Business%20intelligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
+>[Conceitos de Datawarehouse](/Business%20Intelligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
+>[Conceitos de OLAP e ETL](/Business%20Intelligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
 
 **Arquivos criados ao longo do curso:**
->[Criação do banco SQL Server](/Business%20intelligence/SQL-MDX/DatawarehouseSucos/DatawarehouseSucos/)<br>
->[Carga e Transformação dos dados](/Business%20intelligence/SQL-MDX/DatawarehouseSucos/CargaDatawarehouse/)<br>
->[Criação do banco de dados OLAP](/Business%20intelligence/SQL-MDX/DatawarehouseSucos/OLAPSucos/)<br>
->[Consultas em MDX](/Business%20intelligence/SQL-MDX/)<br>
->[Relatórios em PowerBI](/Business%20intelligence/PowerBI/)
+>[Criação do banco SQL Server](/Business%20Intelligence/SQL-MDX/DatawarehouseSucos/DatawarehouseSucos/)<br>
+>[Carga e Transformação dos dados](/Business%20Intelligence/SQL-MDX/DatawarehouseSucos/CargaDatawarehouse/)<br>
+>[Criação do banco de dados OLAP](/Business%20Intelligence/SQL-MDX/DatawarehouseSucos/OLAPSucos/)<br>
+>[Consultas em MDX](/Business%20Intelligence/SQL-MDX/)<br>
+>[Relatórios em PowerBI](/Business%20Intelligence/PowerBI/))
 
 **Screenshots das etapas de criação:**
 
-![Processo ETL - Visual Studio](/Business%20intelligence/SQL-MDX/ETL-VisualStudio.jpg)
+![Processo ETL - Visual Studio](/Business%20Intelligence/SQL-MDX/ETL-VisualStudio.jpg)
 ![Consulta MDX - SQL Analysis Server](/Business%20intelligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
 ![Dashboard PowerBI](/Business%20intelligence/PowerBI/PowerBI.gif)
 </details>
