@@ -55,6 +55,7 @@
 <h2> 2. CURSOS - Introdução à Python 3 </h2>
 
 **Alura**
+
 Realizados dois cursos que fazem uma introdução ao Python. Durante o curso, a proposta foi praticar criando jogos interativos via console.
 
 ![Cursos Python](/Curso-python-1.jpg)
