@@ -70,13 +70,13 @@ Realizados dois cursos que fazem uma introdução ao Python. Durante o curso, a 
 <details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSE CURSO</summary>
 
 **Códigos-fonte desenvolvidos ao longo do curso:**
->[Menu dos jogos](/Business%20intelligence/Curso-Python-Basico/jogos.py) <br>
->[Jogo da Forca](/Business%20intelligence/Curso-Python-Basico/forca.py) <br>
->[Jogo de Adivinhação](/Business%20intelligence/Curso-Python-Basico/adivinhacao.py)
+>[Menu dos jogos](/Business%20Intelligence/Curso-Python-Basico/jogos.py) <br>
+>[Jogo da Forca](/Business%20Intelligence/Curso-Python-Basico/forca.py) <br>
+>[Jogo de Adivinhação](/Business%20Intelligence/Curso-Python-Basico/adivinhacao.py)
 
 **Screenshots**
 
-![VS Code](/Business%20intelligence/Curso-Python-Basico/Python-VSCODE.jpg) <br>
-![Jogo da Forca](/Business%20intelligence/Curso-Python-Basico/Jogo-Forca.jpg) <br>
-![Jogo Adivinhação](/Business%20intelligence/Curso-Python-Basico/jogo-adivinhacao.jpg)
+![VS Code](/Business%20Intelligence/Curso-Python-Basico/Python-VSCODE.jpg) <br>
+![Jogo da Forca](/Business%20Intelligence/Curso-Python-Basico/Jogo-Forca.jpg) <br>
+![Jogo Adivinhação](/Business%20Intelligence/Curso-Python-Basico/jogo-adivinhacao.jpg)
 </details>
