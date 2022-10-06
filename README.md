@@ -1,9 +1,8 @@
-**Cursos Realizados na Alura**
-
-<h1> Business Inteligence </h1>
+<h1> Business intelligence </h1>
 
 <h2> 1. FORMAÇÃO - BI e Data Warehouse com SQL Server e Power BI</h2>
 
+**Alura**
 ![Formação BI com SQL Server](/Formacao-BI-SQLServer.jpg)
 
 [Certificado](https://cursos.alura.com.br/degree/certificate/a98a0acd-0a7d-4a6d-b710-b01d7571cdd0/)
@@ -20,7 +19,7 @@
 
 **Softwares utilizados:**
 
-![Softwares](/Business%20Inteligence/tecnologias-datawarehouse.jpg)
+![Softwares](/Business%20intelligence/tecnologias-datawarehouse.jpg)
 
 **Conceitos abordados:**
 * Construção e modelagem de dados de um Datawarehouse em SQL Server;
@@ -33,21 +32,21 @@
 * Introdução a visualização de dados via Power BI e publicação de dashboards.
 
 **Anotações:**
->[Conceitos de Datawarehouse](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
->[Conceitos de OLAP e ETL](/Business%20Inteligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
+>[Conceitos de Datawarehouse](/Business%20intelligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20Datawarehouse.md)<br>
+>[Conceitos de OLAP e ETL](/Business%20intelligence/anota%C3%A7%C3%B5es%20Conceitos%20de%20ETL.md)
 
 **Arquivos criados ao longo do curso:**
->[Criação do banco SQL Server](/Business%20Inteligence/SQL-MDX/DatawarehouseSucos/DatawarehouseSucos/)<br>
->[Carga e Transformação dos dados](/Business%20Inteligence/SQL-MDX/DatawarehouseSucos/CargaDatawarehouse/)<br>
->[Criação do banco de dados OLAP](/Business%20Inteligence/SQL-MDX/DatawarehouseSucos/OLAPSucos/)<br>
->[Consultas em MDX](/Business%20Inteligence/SQL-MDX/)
->[Relatórios em PowerBI](/Business%20Inteligence/PowerBI/)
+>[Criação do banco SQL Server](/Business%20intelligence/SQL-MDX/DatawarehouseSucos/DatawarehouseSucos/)<br>
+>[Carga e Transformação dos dados](/Business%20intelligence/SQL-MDX/DatawarehouseSucos/CargaDatawarehouse/)<br>
+>[Criação do banco de dados OLAP](/Business%20intelligence/SQL-MDX/DatawarehouseSucos/OLAPSucos/)<br>
+>[Consultas em MDX](/Business%20intelligence/SQL-MDX/)<br>
+>[Relatórios em PowerBI](/Business%20intelligence/PowerBI/)
 
 **Screenshots das etapas de criação:**
 
-![Processo ETL - Visual Studio](/Business%20Inteligence/SQL-MDX/ETL-VisualStudio.jpg)
-![Consulta MDX - SQL Analysis Server](/Business%20Inteligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
-![Dashboard PowerBI](/Business%20Inteligence/PowerBI/PowerBI.gif)
+![Processo ETL - Visual Studio](/Business%20intelligence/SQL-MDX/ETL-VisualStudio.jpg)
+![Consulta MDX - SQL Analysis Server](/Business%20intelligence/SQL-MDX/MDX-SQLAnalysisServer.jpg)
+![Dashboard PowerBI](/Business%20intelligence/PowerBI/PowerBI.gif)
 </details>
 
 <br>
@@ -55,6 +54,7 @@
 
 <h2> 2. CURSOS - Introdução à Python 3 </h2>
 
+**Alura**
 Realizados dois cursos que fazem uma introdução ao Python. Durante o curso, a proposta foi praticar criando jogos interativos via console.
 
 ![Cursos Python](/Curso-python-1.jpg)
@@ -70,13 +70,13 @@ Realizados dois cursos que fazem uma introdução ao Python. Durante o curso, a 
 <details><summary>CLIQUE AQUI PARA MAIS DETALHES DESSE CURSO</summary>
 
 **Códigos-fonte desenvolvidos ao longo do curso:**
->[Menu dos jogos](/Business%20Inteligence/Curso-Python-Basico/jogos.py) <br>
->[Jogo da Forca](/Business%20Inteligence/Curso-Python-Basico/forca.py) <br>
->[Jogo de Adivinhação](/Business%20Inteligence/Curso-Python-Basico/adivinhacao.py)
+>[Menu dos jogos](/Business%20intelligence/Curso-Python-Basico/jogos.py) <br>
+>[Jogo da Forca](/Business%20intelligence/Curso-Python-Basico/forca.py) <br>
+>[Jogo de Adivinhação](/Business%20intelligence/Curso-Python-Basico/adivinhacao.py)
 
 **Screenshots**
 
-![VS Code](/Business%20Inteligence/Curso-Python-Basico/Python-VSCODE.jpg) <br>
-![Jogo da Forca](/Business%20Inteligence/Curso-Python-Basico/Jogo-Forca.jpg) <br>
-![Jogo Adivinhação](/Business%20Inteligence/Curso-Python-Basico/jogo-adivinhacao.jpg)
+![VS Code](/Business%20intelligence/Curso-Python-Basico/Python-VSCODE.jpg) <br>
+![Jogo da Forca](/Business%20intelligence/Curso-Python-Basico/Jogo-Forca.jpg) <br>
+![Jogo Adivinhação](/Business%20intelligence/Curso-Python-Basico/jogo-adivinhacao.jpg)
 </details>
